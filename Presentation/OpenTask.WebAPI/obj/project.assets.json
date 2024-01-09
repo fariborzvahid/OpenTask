@@ -1,0 +1,170 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets": {}
+        }
+      },
+      "OpenTask.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/OpenTask.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OpenTask.Application.dll": {}
+        }
+      },
+      "OpenTask.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/OpenTask.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OpenTask.Application.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.0": {
+      "sha512": "Fakt2ZiMSAB4yOiJ1m4nkpbfeSIVo/l/ExcLcIuhgj3BuCn0GXPBZ1wm3jG+2O8luVysVQOJ+rezjIwd3P5WzQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
+        "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
+        "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
+        "microsoft.aspnetcore.components.webassembly.server.7.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.server.nuspec",
+        "tools/BlazorDebugProxy/BrowserDebugHost.dll",
+        "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
+        "tools/BlazorDebugProxy/BrowserDebugProxy.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
+        "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
+      ]
+    },
+    "OpenTask.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/OpenTask.Application/OpenTask.Application.csproj",
+      "msbuildProject": "../../Core/OpenTask.Application/OpenTask.Application.csproj"
+    },
+    "OpenTask.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../../Core/OpenTask.Application.Contracts/OpenTask.Application.Contracts.csproj",
+      "msbuildProject": "../../Core/OpenTask.Application.Contracts/OpenTask.Application.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.0",
+      "OpenTask.Application >= 1.0.0",
+      "OpenTask.Application.Contracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Fariborz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Presentation\\OpenTask.WebAPI\\OpenTask.Server.csproj",
+      "projectName": "OpenTask.Server",
+      "projectPath": "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Presentation\\OpenTask.WebAPI\\OpenTask.Server.csproj",
+      "packagesPath": "C:\\Users\\Fariborz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Presentation\\OpenTask.WebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Fariborz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Core\\OpenTask.Application.Contracts\\OpenTask.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Core\\OpenTask.Application.Contracts\\OpenTask.Application.Contracts.csproj"
+            },
+            "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Core\\OpenTask.Application\\OpenTask.Application.csproj": {
+              "projectPath": "C:\\Users\\Fariborz\\Documents\\GitHub\\OpenTask\\Core\\OpenTask.Application\\OpenTask.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
