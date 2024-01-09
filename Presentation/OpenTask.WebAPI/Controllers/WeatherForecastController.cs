@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using OpenTask.Shared;
+using OpenTask.Application.Contracts;
 
 namespace OpenTask.Server.Controllers;
 
