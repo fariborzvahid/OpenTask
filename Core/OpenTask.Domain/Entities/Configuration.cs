@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace OpenTask.Domain.Entities;
 
-public class Tag : BaseModel
+public class Configuration : BaseModel
 {
-    public string Name { get; set; }
-    public string Color { get; set; }
-
-    public List<WorkUnit> WorkUnits { get; } = [];
+    public string Key { get; set; }
+    public string Value { get; set; }
+    public bool IsSystemConfiguration { get; set; }
 }

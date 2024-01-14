@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenTask.Domain.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,16 +10,12 @@ namespace OpenTask.Domain.Entities;
 /// <summary>
 /// The work unit.
 /// </summary>
-public class WorkUnit
+public class WorkUnit : BaseModel
 {
     /// <summary>
-    /// Gets or Sets the id.
+    /// Gets or Sets the title.
     /// </summary>
-    public int Id { get; set; }
-    /// <summary>
-    /// Gets or Sets the name.
-    /// </summary>
-    public string Name { get; set; }
+    public string Title { get; set; }
     /// <summary>
     /// Gets or Sets the description.
     /// </summary>
@@ -27,6 +24,10 @@ public class WorkUnit
     /// Gets or Sets the status.
     /// </summary>
     public string Status { get; set; }
+    public Project Project { get; set; }
+    public WorkUnitType WorkUnitType { get; set; }
+
+    public Goal? Goal { get; set; }
     /// <summary>
     /// Gets or Sets the parent work unit.
     /// </summary>
@@ -42,17 +43,17 @@ public class WorkUnit
     /// <summary>
     /// Gets the work logs.
     /// </summary>
-    public List<WorkLog> WorkLogs { get; } = [];
+    public ICollection<WorkLog> WorkLogs { get; } = new List<WorkLog>();
     /// <summary>
     /// Gets the resources.
     /// </summary>
-    public List<Resource> Resources { get; } = [];
+    public ICollection<Resource> Resources { get; } = new List<Resource>();
     /// <summary>
     /// Gets the comments.
     /// </summary>
-    public List<Comment> Comments { get; } = [];
+    public ICollection<Comment> Comments { get; } = new List<Comment>();
     /// <summary>
     /// Gets the events.
     /// </summary>
-    public List<Event> Events { get; } = [];
+    public ICollection<Event> Events { get; } = new List<Event>();
 }
